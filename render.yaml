@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: cottendns
+    env: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: INTERNAL_DNS_PORT
+        value: 5353
