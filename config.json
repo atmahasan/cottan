@@ -1,0 +1,32 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 5353,
+    "doh_port": 10000,
+    "protocol": ["udp", "tcp", "doh"]
+  },
+  "upstreams": [
+    "1.1.1.1:53",
+    "8.8.8.8:53"
+  ],
+  "sni_proxy_ip": "50.7.85.220",
+  "spoof_domains": {
+    "openai.com": "50.7.85.220",
+    "chatgpt.com": "50.7.85.220",
+    "gemini.google.com": "50.7.85.220",
+    "ai.google.dev": "50.7.85.220",
+    "docker.io": "50.7.85.220",
+    "docker.com": "50.7.85.220",
+    "developer.android.com": "50.7.85.220",
+    "dl.google.com": "50.7.85.220",
+    "epicgames.com": "50.7.85.220",
+    "ea.com": "50.7.85.220",
+    "riotgames.com": "50.7.85.220",
+    "spotify.com": "50.7.85.220"
+  },
+  "blocklist": [
+    "doubleclick.net",
+    "googleadservices.com",
+    "googlesyndication.com"
+  ]
+}
